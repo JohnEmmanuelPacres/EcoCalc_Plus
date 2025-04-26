@@ -1,0 +1,36 @@
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus\bin\Debug\net8.0-windows\EcoCalc Plus.exe
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus\bin\Debug\net8.0-windows\EcoCalc Plus.deps.json
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus\bin\Debug\net8.0-windows\EcoCalc Plus.runtimeconfig.json
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus\bin\Debug\net8.0-windows\EcoCalc Plus.dll
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus\bin\Debug\net8.0-windows\EcoCalc Plus.pdb
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus\obj\Debug\net8.0-windows\EcoCalc Plus.csproj.GenerateResource.cache
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus\obj\Debug\net8.0-windows\EcoCalc Plus.GeneratedMSBuildEditorConfig.editorconfig
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus\obj\Debug\net8.0-windows\EcoCalc Plus.AssemblyInfoInputs.cache
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus\obj\Debug\net8.0-windows\EcoCalc Plus.AssemblyInfo.cs
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus\obj\Debug\net8.0-windows\EcoCalc Plus.csproj.CoreCompileInputs.cache
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus\obj\Debug\net8.0-windows\EcoCalc Plus.dll
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus\obj\Debug\net8.0-windows\refint\EcoCalc Plus.dll
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus\obj\Debug\net8.0-windows\EcoCalc Plus.pdb
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus\obj\Debug\net8.0-windows\EcoCalc Plus.genruntimeconfig.cache
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus\obj\Debug\net8.0-windows\ref\EcoCalc Plus.dll
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus\obj\Debug\net8.0-windows\EcoCalc_Plus.TitleScreen.resources
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus\obj\Debug\net8.0-windows\EcoCalc_Plus.Properties.Resources.resources
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus - Copy\bin\Debug\net8.0-windows\EcoCalc Plus.exe
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus - Copy\bin\Debug\net8.0-windows\EcoCalc Plus.deps.json
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus - Copy\bin\Debug\net8.0-windows\EcoCalc Plus.runtimeconfig.json
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus - Copy\bin\Debug\net8.0-windows\EcoCalc Plus.dll
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus - Copy\bin\Debug\net8.0-windows\EcoCalc Plus.pdb
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus - Copy\obj\Debug\net8.0-windows\EcoCalc_Plus.LoadingScreen.resources
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus - Copy\obj\Debug\net8.0-windows\EcoCalc_Plus.Properties.Resources.resources
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus - Copy\obj\Debug\net8.0-windows\EcoCalc_Plus.TitleScreen.resources
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus - Copy\obj\Debug\net8.0-windows\EcoCalc Plus.csproj.GenerateResource.cache
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus - Copy\obj\Debug\net8.0-windows\EcoCalc Plus.GeneratedMSBuildEditorConfig.editorconfig
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus - Copy\obj\Debug\net8.0-windows\EcoCalc Plus.AssemblyInfoInputs.cache
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus - Copy\obj\Debug\net8.0-windows\EcoCalc Plus.AssemblyInfo.cs
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus - Copy\obj\Debug\net8.0-windows\EcoCalc Plus.csproj.CoreCompileInputs.cache
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus - Copy\obj\Debug\net8.0-windows\EcoCalc Plus.dll
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus - Copy\obj\Debug\net8.0-windows\refint\EcoCalc Plus.dll
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus - Copy\obj\Debug\net8.0-windows\EcoCalc Plus.pdb
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus - Copy\obj\Debug\net8.0-windows\EcoCalc Plus.genruntimeconfig.cache
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus - Copy\obj\Debug\net8.0-windows\ref\EcoCalc Plus.dll
+C:\src\PACRES_CPE 262_Final Project\EcoCalc Plus\obj\Debug\net8.0-windows\EcoCalc_Plus.LoadingScreen.resources

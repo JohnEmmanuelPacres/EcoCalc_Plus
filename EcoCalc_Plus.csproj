@@ -1,0 +1,855 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>EcoCalc_Plus</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="MLData\**" />
+    <Compile Remove="Plant\**" />
+    <Compile Remove="Resources\EcoCalc minigame_Data\**" />
+    <EmbeddedResource Remove="MLData\**" />
+    <EmbeddedResource Remove="Plant\**" />
+    <EmbeddedResource Remove="Resources\EcoCalc minigame_Data\**" />
+    <None Remove="MLData\**" />
+    <None Remove="Plant\**" />
+    <None Remove="Resources\EcoCalc minigame_Data\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="assets\Audio\audio_background.WAV" />
+    <None Remove="assets\Audio\audio_bg.WAV" />
+    <None Remove="assets\Audio\audio_choose.WAV" />
+    <None Remove="assets\Audio\audio_selectCalc.WAV" />
+    <None Remove="assets\Audio\audio_selected.WAV" />
+    <None Remove="assets\Audio\audio_selectLand.WAV" />
+    <None Remove="assets\Audio\audio_selectSave.WAV" />
+    <None Remove="assets\Fonts\Minecraft.ttf" />
+    <None Remove="assets\Images\backdrop\backdrop_loading.gif" />
+    <None Remove="assets\Images\backdrop\backdrop_title.gif" />
+    <None Remove="assets\Images\sprites\logo.ico" />
+    <None Remove="assets\Images\sprites\sprite-leafcursor.cur" />
+    <None Remove="assets\Images\sprites\sprite_earth.gif" />
+    <None Remove="assets\Images\sprites\sprite_guest.png" />
+    <None Remove="assets\Images\sprites\sprite_guestAlt.png" />
+    <None Remove="assets\Images\sprites\sprite_leafCursor.png" />
+    <None Remove="assets\Images\sprites\sprite_title.gif" />
+    <None Remove="assets\Images\sprites\sprite_user.png" />
+    <None Remove="assets\Images\sprites\sprite_userAlt.png" />
+    <None Remove="Resources\carbon_data.csv" />
+    <None Remove="Resources\carbon_footprint_model.onnx" />
+    <None Remove="Resources\EcoCalc minigame.exe" />
+    <None Remove="Resources\EcoCalcPlus_Db.accdb" />
+    <None Remove="Resources\minigame files\D3D12\D3D12Core.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame.exe" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_BurstDebugInformation_DoNotShip\Data\Plugins\x86_64\lib_burst_generated.txt" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\app.info" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\boot.config" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\globalgamemanagers" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\globalgamemanagers.assets" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\globalgamemanagers.assets.resS" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\level0" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\level1" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Assembly-CSharp.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Mono.Security.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\mscorlib.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\netstandard.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\System.ComponentModel.Composition.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Configuration.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Core.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Data.DataSetExtensions.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Data.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\System.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Drawing.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\System.EnterpriseServices.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\System.IO.Compression.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\System.IO.Compression.FileSystem.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Net.Http.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Numerics.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Runtime.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Runtime.Serialization.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Security.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\System.ServiceModel.Internals.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Transactions.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Xml.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Xml.Linq.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.2D.Animation.Runtime.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.2D.Common.Runtime.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.2D.IK.Runtime.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.2D.PixelPerfect.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.2D.SpriteShape.Runtime.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.2D.Tilemap.Extras.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.Burst.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.Burst.Unsafe.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.Cinemachine.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.Collections.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.Collections.LowLevel.ILSupport.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.InputSystem.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.InputSystem.ForUI.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.InternalAPIEngineBridge.001.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.Mathematics.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.Multiplayer.Center.Common.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.Rendering.LightTransport.Runtime.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.RenderPipeline.Universal.ShaderLibrary.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.RenderPipelines.Core.Runtime.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.RenderPipelines.Core.Runtime.Shared.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.RenderPipelines.Core.ShaderLibrary.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.RenderPipelines.GPUDriven.Runtime.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.RenderPipelines.Universal.2D.Runtime.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.RenderPipelines.Universal.Config.Runtime.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.RenderPipelines.Universal.Runtime.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.RenderPipelines.Universal.Shaders.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.Splines.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.TextMeshPro.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.Timeline.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.VisualScripting.Antlr3.Runtime.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.VisualScripting.Core.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.VisualScripting.Flow.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.VisualScripting.State.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.AccessibilityModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.AIModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.AMDModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.AndroidJNIModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.AnimationModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.ARModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.AssetBundleModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.AudioModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.ClothModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.ClusterInputModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.ClusterRendererModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.ContentLoadModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.CoreModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.CrashReportingModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.DirectorModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.DSPGraphModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.GameCenterModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.GIModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.GraphicsStateCollectionSerializerModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.GridModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.HierarchyCoreModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.HotReloadModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.ImageConversionModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.IMGUIModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.InputForUIModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.InputLegacyModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.InputModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.JSONSerializeModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.LocalizationModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.MarshallingModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.MultiplayerModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.NVIDIAModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.ParticleSystemModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.PerformanceReportingModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.Physics2DModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.PhysicsModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.PropertiesModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.ScreenCaptureModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.ShaderVariantAnalyticsModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.SharedInternalsModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.SpriteMaskModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.SpriteShapeModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.StreamingModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.SubstanceModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.SubsystemsModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.TerrainModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.TerrainPhysicsModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.TextCoreFontEngineModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.TextCoreTextEngineModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.TextRenderingModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.TilemapModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.TLSModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UI.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UIElementsModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UIModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UmbraModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UnityAnalyticsCommonModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UnityAnalyticsModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UnityConnectModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UnityCurlModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UnityTestProtocolModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UnityWebRequestModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.VehiclesModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.VFXModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.VideoModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.VirtualTexturingModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.VRModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.WindModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.XRModule.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Plugins\x86_64\lib_burst_generated.dll" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\resources.assets" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\resources.assets.resS" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Resources\unity default resources" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\Resources\unity_builtin_extra" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\RuntimeInitializeOnLoads.json" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\ScriptingAssemblies.json" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\sharedassets0.assets" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\sharedassets0.assets.resS" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\sharedassets0.resource" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\sharedassets1.assets" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\sharedassets1.assets.resS" />
+    <None Remove="Resources\minigame files\EcoCalc minigame_Data\sharedassets1.resource" />
+    <None Remove="Resources\minigame files\MonoBleedingEdge\EmbedRuntime\mono-2.0-bdwgc.dll" />
+    <None Remove="Resources\minigame files\MonoBleedingEdge\EmbedRuntime\MonoPosixHelper.dll" />
+    <None Remove="Resources\minigame files\MonoBleedingEdge\etc\mono\2.0\Browsers\Compat.browser" />
+    <None Remove="Resources\minigame files\MonoBleedingEdge\etc\mono\2.0\DefaultWsdlHelpGenerator.aspx" />
+    <None Remove="Resources\minigame files\MonoBleedingEdge\etc\mono\2.0\machine.config" />
+    <None Remove="Resources\minigame files\MonoBleedingEdge\etc\mono\2.0\settings.map" />
+    <None Remove="Resources\minigame files\MonoBleedingEdge\etc\mono\2.0\web.config" />
+    <None Remove="Resources\minigame files\MonoBleedingEdge\etc\mono\4.0\Browsers\Compat.browser" />
+    <None Remove="Resources\minigame files\MonoBleedingEdge\etc\mono\4.0\DefaultWsdlHelpGenerator.aspx" />
+    <None Remove="Resources\minigame files\MonoBleedingEdge\etc\mono\4.0\machine.config" />
+    <None Remove="Resources\minigame files\MonoBleedingEdge\etc\mono\4.0\settings.map" />
+    <None Remove="Resources\minigame files\MonoBleedingEdge\etc\mono\4.0\web.config" />
+    <None Remove="Resources\minigame files\MonoBleedingEdge\etc\mono\4.5\Browsers\Compat.browser" />
+    <None Remove="Resources\minigame files\MonoBleedingEdge\etc\mono\4.5\DefaultWsdlHelpGenerator.aspx" />
+    <None Remove="Resources\minigame files\MonoBleedingEdge\etc\mono\4.5\machine.config" />
+    <None Remove="Resources\minigame files\MonoBleedingEdge\etc\mono\4.5\settings.map" />
+    <None Remove="Resources\minigame files\MonoBleedingEdge\etc\mono\4.5\web.config" />
+    <None Remove="Resources\minigame files\MonoBleedingEdge\etc\mono\browscap.ini" />
+    <None Remove="Resources\minigame files\MonoBleedingEdge\etc\mono\config" />
+    <None Remove="Resources\minigame files\MonoBleedingEdge\etc\mono\mconfig\config.xml" />
+    <None Remove="Resources\minigame files\UnityCrashHandler64.exe" />
+    <None Remove="Resources\minigame files\UnityPlayer.dll" />
+    <None Remove="Resources\mono-2.0-bdwgc.dll" />
+    <None Remove="Resources\MonoPosixHelper.dll" />
+    <None Remove="Resources\ne_10m_admin_0_countries.svg" />
+    <None Remove="Resources\style.css" />
+    <None Remove="Resources\UnityPlayer.dll" />
+    <None Remove="Resources\world_map.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\minigame files\EcoCalc minigame.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\MonoBleedingEdge\EmbedRuntime\mono-2.0-bdwgc.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\MonoBleedingEdge\EmbedRuntime\MonoPosixHelper.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="assets\Audio\audio_background.WAV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\audio_bg.WAV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\audio_choose.WAV">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\audio_selectCalc.WAV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\audio_selected.WAV">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\audio_selectLand.WAV">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Audio\audio_selectSave.WAV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\carbon_footprint_model.onnx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\D3D12\D3D12Core.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_BurstDebugInformation_DoNotShip\Data\Plugins\x86_64\lib_burst_generated.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\app.info">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\boot.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\globalgamemanagers">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\globalgamemanagers.assets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\globalgamemanagers.assets.resS">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\level0">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\level1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Assembly-CSharp.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Mono.Security.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\mscorlib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\netstandard.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\System.ComponentModel.Composition.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Configuration.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Core.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Data.DataSetExtensions.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Data.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\System.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Drawing.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\System.EnterpriseServices.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\System.IO.Compression.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\System.IO.Compression.FileSystem.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Net.Http.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Numerics.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Runtime.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Runtime.Serialization.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Security.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\System.ServiceModel.Internals.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Transactions.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Xml.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\System.Xml.Linq.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.2D.Animation.Runtime.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.2D.Common.Runtime.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.2D.IK.Runtime.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.2D.PixelPerfect.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.2D.SpriteShape.Runtime.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.2D.Tilemap.Extras.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.Burst.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.Burst.Unsafe.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.Cinemachine.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.Collections.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.Collections.LowLevel.ILSupport.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.InputSystem.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.InputSystem.ForUI.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.InternalAPIEngineBridge.001.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.Mathematics.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.Multiplayer.Center.Common.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.Rendering.LightTransport.Runtime.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.RenderPipeline.Universal.ShaderLibrary.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.RenderPipelines.Core.Runtime.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.RenderPipelines.Core.Runtime.Shared.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.RenderPipelines.Core.ShaderLibrary.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.RenderPipelines.GPUDriven.Runtime.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.RenderPipelines.Universal.2D.Runtime.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.RenderPipelines.Universal.Config.Runtime.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.RenderPipelines.Universal.Runtime.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.RenderPipelines.Universal.Shaders.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.Splines.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.TextMeshPro.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.Timeline.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.VisualScripting.Antlr3.Runtime.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.VisualScripting.Core.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.VisualScripting.Flow.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\Unity.VisualScripting.State.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.AccessibilityModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.AIModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.AMDModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.AndroidJNIModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.AnimationModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.ARModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.AssetBundleModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.AudioModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.ClothModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.ClusterInputModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.ClusterRendererModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.ContentLoadModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.CoreModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.CrashReportingModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.DirectorModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.DSPGraphModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.GameCenterModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.GIModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.GraphicsStateCollectionSerializerModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.GridModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.HierarchyCoreModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.HotReloadModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.ImageConversionModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.IMGUIModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.InputForUIModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.InputLegacyModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.InputModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.JSONSerializeModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.LocalizationModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.MarshallingModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.MultiplayerModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.NVIDIAModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.ParticleSystemModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.PerformanceReportingModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.Physics2DModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.PhysicsModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.PropertiesModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.ScreenCaptureModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.ShaderVariantAnalyticsModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.SharedInternalsModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.SpriteMaskModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.SpriteShapeModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.StreamingModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.SubstanceModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.SubsystemsModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.TerrainModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.TerrainPhysicsModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.TextCoreFontEngineModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.TextCoreTextEngineModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.TextRenderingModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.TilemapModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.TLSModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UI.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UIElementsModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UIModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UmbraModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UnityAnalyticsCommonModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UnityAnalyticsModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UnityConnectModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UnityCurlModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UnityTestProtocolModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UnityWebRequestModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.VehiclesModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.VFXModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.VideoModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.VirtualTexturingModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.VRModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.WindModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Managed\UnityEngine.XRModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Plugins\x86_64\lib_burst_generated.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\resources.assets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\resources.assets.resS">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Resources\unity default resources">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\Resources\unity_builtin_extra">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\RuntimeInitializeOnLoads.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\ScriptingAssemblies.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\sharedassets0.assets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\sharedassets0.assets.resS">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\sharedassets0.resource">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\sharedassets1.assets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\sharedassets1.assets.resS">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\EcoCalc minigame_Data\sharedassets1.resource">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\MonoBleedingEdge\etc\mono\2.0\Browsers\Compat.browser">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\MonoBleedingEdge\etc\mono\2.0\DefaultWsdlHelpGenerator.aspx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\MonoBleedingEdge\etc\mono\2.0\machine.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\MonoBleedingEdge\etc\mono\2.0\settings.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\MonoBleedingEdge\etc\mono\2.0\web.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\MonoBleedingEdge\etc\mono\4.0\Browsers\Compat.browser">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\MonoBleedingEdge\etc\mono\4.0\DefaultWsdlHelpGenerator.aspx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\MonoBleedingEdge\etc\mono\4.0\machine.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\MonoBleedingEdge\etc\mono\4.0\settings.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\MonoBleedingEdge\etc\mono\4.0\web.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\MonoBleedingEdge\etc\mono\4.5\Browsers\Compat.browser">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\MonoBleedingEdge\etc\mono\4.5\DefaultWsdlHelpGenerator.aspx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\MonoBleedingEdge\etc\mono\4.5\machine.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\MonoBleedingEdge\etc\mono\4.5\settings.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\MonoBleedingEdge\etc\mono\4.5\web.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\MonoBleedingEdge\etc\mono\browscap.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\MonoBleedingEdge\etc\mono\config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\MonoBleedingEdge\etc\mono\mconfig\config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\UnityCrashHandler64.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\minigame files\UnityPlayer.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ne_10m_admin_0_countries.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\world.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\world_map.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="assets\Fonts\Minecraft.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assets\Images\backdrop\backdrop_loading.gif" />
+    <EmbeddedResource Include="assets\Images\backdrop\backdrop_title.gif" />
+    <EmbeddedResource Include="assets\Images\sprites\logo.ico" />
+    <EmbeddedResource Include="assets\Images\sprites\sprite-leafcursor.cur" />
+    <EmbeddedResource Include="assets\Images\sprites\sprite_earth.gif" />
+    <EmbeddedResource Include="assets\Images\sprites\sprite_guest.png" />
+    <EmbeddedResource Include="assets\Images\sprites\sprite_guestAlt.png" />
+    <EmbeddedResource Include="assets\Images\sprites\sprite_leafCursor.png" />
+    <EmbeddedResource Include="assets\Images\sprites\sprite_title.gif" />
+    <EmbeddedResource Include="assets\Images\sprites\sprite_user.png" />
+    <EmbeddedResource Include="assets\Images\sprites\sprite_userAlt.png" />
+    <Content Include="Resources\EcoCalcPlus_Database.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Krypton.Toolkit" Version="90.25.2.55" />
+    <PackageReference Include="Microsoft.ML" Version="5.0.0-preview.1.25127.4" />
+    <PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.21.0" />
+    <PackageReference Include="Microsoft.ML.OnnxTransformer" Version="5.0.0-preview.1.25127.4" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3171-prerelease" />
+    <PackageReference Include="NAudio" Version="2.2.1" />
+    <PackageReference Include="OxyPlot.Core" Version="2.2.0" />
+    <PackageReference Include="OxyPlot.WindowsForms" Version="2.2.0" />
+    <PackageReference Include="System.Data.OleDb" Version="10.0.0-preview.3.25171.5" />
+    <PackageReference Include="System.Drawing.Common" Version="9.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="assets\Videos\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="sprite_visible" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_visible.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_loginAltBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_loginAltBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_saveBtnOrig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_saveBtnOrig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backdrop_dashboard2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\backdrop\backdrop_dashboard.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backdrop_logInMessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\backdrop\backdrop_logInMessage.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_returnOrig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_returnOrig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Faceset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Faceset.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_guestProfileSmol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_guestProfileSmol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_fpass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_fpass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_checkBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_checkBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_exitAlt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_exitAlt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_roadBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_roadBack.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_calculatorBtnAni" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_calculatorBtnAni.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_rawbot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_rawbot.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_guestProfile1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_guestProfile1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_calculatorBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_calculatorBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_plantLogoAlt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_plantLogoAlt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_floatingPhone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_floatingPhone.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_return1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_return.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sunflower_seed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\plant_minigame\sunflower_seed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_roadBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_roadBg.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_NoSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_NoSound.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_guest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_guest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_zoomOutAlt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_zoomOutAlt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backdrop_dashboard1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\backdrop\backdrop_dashboard.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_thumb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_thumb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_deleteAccAlt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_deleteAccAlt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_title" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_title.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_updateAccAlt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_updateAccAlt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_fillBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_fillBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_continueBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_continueBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sunflower_packet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\plant_minigame\sunflower_packet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_gameLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_gameLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_return" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_return.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_guestAlt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_guestAlt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_zoomInAlt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_zoomInAlt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_analyticsBtnAni" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_analyticsBtnAni.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite-leafcursor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite-leafcursor.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sprite_previousAlt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_previousAlt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_house" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_house.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_earth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_earth.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_userAlt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_userAlt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_zoomIn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_zoomIn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_loginPanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_loginPanel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_loginBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_loginBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_lockLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_lockLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_loginBtn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_loginBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backdrop_dashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\backdrop\backdrop_dashboard.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_exitBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_exitBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_rawbotGirl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_rawbotGirl.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_emailLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_emailLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_gradientPink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_gradientPink.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_returnTitleOrig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_returnTitleOrig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sunflower_stage3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\plant_minigame\sunflower_stage3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_titleScreenBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_titleScreenBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_invisible" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_invisible.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backdrop_title" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\backdrop\backdrop_title.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_track" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_track.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sunflower_stage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\plant_minigame\sunflower_stage1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_earthBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_earthBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backdrop_customLogInBorder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\backdrop\backdrop_customLogInBorder.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backdrop_loading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\backdrop\backdrop_loading.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_Sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_Sound.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_guestProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_guestProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_createAltBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_createAltBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_priorityBtnAlt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_priorityBtnAlt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_analyticsBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_analyticsBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_emptyBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_emptyBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_menuAlt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_menuAlt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_waste2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_waste2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_gameLogoAlt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_gameLogoAlt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_createBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_createBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_road" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_road.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_plantLogoOrig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_plantLogoOrig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_continueAltBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_continueAltBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_returnTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_returnTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_deleteAcc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_deleteAcc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_saveBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_saveBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_experimentalBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_experimentalBg.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_waste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_waste.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_titleScreenBtnAni" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_titleScreenBtnAni.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_exitBtnLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_exitBtnLarge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_logIn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_logIn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_previous" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_previous.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_userLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_userLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_updateAcc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_updateAcc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sunflower_stage2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\plant_minigame\sunflower_stage2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pot_sprite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\plant_minigame\pot_sprite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_profileAlt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_profileAlt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_zoomOut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_zoomOut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_logInAlt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_logInAlt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_signUpAlt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_signUpAlt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_signUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_signUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_priorityBtnOrig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\sprite_priorityBtnOrig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprite_pot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\sprites\plant_minigame\sprite_pot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backdrop_dashboardbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\backdrop\backdrop_dashboardbg.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backdrop_dashboard11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\Images\backdrop\backdrop_dashboard1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
