@@ -1,4 +1,3 @@
-using EcoCalc_Plus.Forms;
 using EcoCalc_Plus.UtilityClass;
 using System.IO;
 using System.Reflection;
