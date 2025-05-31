@@ -5,6 +5,7 @@ namespace EcoCalc_Plus.UtilityClass
 {
     class HashPassword
     {
+        //for encrypting password in the database
         public string HashedPassword(string password)
         {
             using (SHA256 sha256Hash = SHA256.Create())
