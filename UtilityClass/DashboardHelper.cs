@@ -8,6 +8,7 @@ namespace EcoCalc_Plus.UtilityClass
 {
     class DashboardHelper
     {
+        //for modularity
         public static void SetParent(Control child, Control parent)
         {
             child.Parent = parent;
