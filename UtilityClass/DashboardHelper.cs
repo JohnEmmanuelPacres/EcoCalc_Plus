@@ -13,6 +13,7 @@ namespace EcoCalc_Plus.UtilityClass
             child.Parent = parent;
         }
 
+        //for mouse hover effect
         public static void StoreOriginalImages(Dictionary<PictureBox, Image> imageDictionary, params PictureBox[] buttons)
         {
             foreach (var button in buttons)
